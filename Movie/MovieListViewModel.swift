@@ -46,15 +46,51 @@ class MovieListViewModel: ObservableObject {
                 }
 
                 self.popularCurrPage += 1
+                self.savePopularMovieData(movieInfo: movieInfo.results ?? [Movie]())
                 DispatchQueue.main.async {
                     self.popularMovieList.append(contentsOf: movieInfo.results ?? [Movie]())
                 }
             case .failure(let error):
                 debugPrint(error)
+                if self.popularMovieList.count < 1 {
+                    self.fetchSavedPopularMovieData()
+                }
             }
         }
     }
     
+    private func savePopularMovieData(movieInfo: [Movie]) {
+        var savedPopularMovieList: [Movie] = [Movie]()
+        if let decodedData = UserDefaults.standard.object(forKey: "savedPopularList") as? Data {
+           if let movieList = try? JSONDecoder().decode([Movie].self, from: decodedData) {
+               savedPopularMovieList = movieList
+               print("savedPopList: \(savedPopularMovieList.description)")
+          }
+        }
+        for movie in movieInfo {
+            if !savedPopularMovieList.contains(where: {$0.id==movie.id}) {
+                savedPopularMovieList.append(contentsOf: movieInfo)
+            }
+        }
+        if let encodedList = try? JSONEncoder().encode(savedPopularMovieList) {
+           UserDefaults.standard.set(encodedList, forKey: "savedPopularList")
+        }
+    }
+    
+    private func fetchSavedPopularMovieData() {
+        var savedPopularMovieList: [Movie] = [Movie]()
+        if let decodedData = UserDefaults.standard.object(forKey: "savedPopularList") as? Data {
+           if let movieList = try? JSONDecoder().decode([Movie].self, from: decodedData) {
+               savedPopularMovieList = movieList
+               print("savedPopList: \(savedPopularMovieList.description)")
+          }
+        }
+        
+        DispatchQueue.main.async {
+            self.popularMovieList.append(contentsOf: savedPopularMovieList)
+        }
+    }
+        
     func fetchUpcomingMovies(pageNo: Int) {
         guard loadMoreUpcomingPage else {
             return
@@ -71,12 +107,48 @@ class MovieListViewModel: ObservableObject {
                 }
 
                 self.upcomingCurrPage += 1
+                self.saveUpcomingMovieData(movieInfo: movieInfo.results ?? [Movie]())
                 DispatchQueue.main.async {
                     self.upcomingMovieList.append(contentsOf: movieInfo.results ?? [Movie]())
                 }
             case .failure(let error):
                 debugPrint(error)
+                if self.popularMovieList.count < 1 {
+                    self.fetchSavedUpcomingMovieData()
+                }
             }
+        }
+    }
+    
+    private func saveUpcomingMovieData(movieInfo: [Movie]) {
+        var savedUpcomingMovieList: [Movie] = [Movie]()
+        if let decodedData = UserDefaults.standard.object(forKey: "savedUpcomingList") as? Data {
+           if let movieList = try? JSONDecoder().decode([Movie].self, from: decodedData) {
+               savedUpcomingMovieList = movieList
+               print("savedUpList: \(savedUpcomingMovieList.description)")
+          }
+        }
+        for movie in movieInfo {
+            if !savedUpcomingMovieList.contains(where: {$0.id==movie.id}) {
+                savedUpcomingMovieList.append(contentsOf: movieInfo)
+            }
+        }
+        if let encodedList = try? JSONEncoder().encode(savedUpcomingMovieList) {
+           UserDefaults.standard.set(encodedList, forKey: "savedUpcomingList")
+        }
+    }
+    
+    private func fetchSavedUpcomingMovieData() {
+        var savedUpcomingMovieList: [Movie] = [Movie]()
+        if let decodedData = UserDefaults.standard.object(forKey: "savedUpcomingList") as? Data {
+           if let movieList = try? JSONDecoder().decode([Movie].self, from: decodedData) {
+               savedUpcomingMovieList = movieList
+               print("savedUpList: \(savedUpcomingMovieList.description)")
+          }
+        }
+        
+        DispatchQueue.main.async {
+            self.upcomingMovieList.append(contentsOf: savedUpcomingMovieList)
         }
     }
 }

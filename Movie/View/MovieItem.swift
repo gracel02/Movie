@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct MovieItem: View {
+    @ObservedObject var imageLoader = ImageLoader()
     let movie: Movie
-
+    
     var body: some View {
         VStack(alignment: .center) {
-            AsyncImage(url: movie.posterURL) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
+            if self.imageLoader.image != nil {
+                Image(uiImage: self.imageLoader.image!)
+                    .resizable()
+                    .frame(width: 150, height: 225)
+                
+            }else{
+                Image(uiImage: UIImage(named: "placeholder.png")!)
+                    .resizable()
+                    .frame(width: 150, height: 225)
             }
-            .frame(width: 150, height: 225)
-            Text(movie.title ?? "").font(.headline)//.foregroundColor(.secondary)
-        }.frame(width: 150, height: 305 , alignment: .top)
+
+            Text(movie.title ?? "").font(.headline)
+        }
+        .onAppear {
+            self.imageLoader.loadImage(with: movie.posterURL)
+        }
+        .frame(width: 150, height: 305 , alignment: .top)
+        
     }
 }
 

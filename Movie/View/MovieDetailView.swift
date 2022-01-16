@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct MovieDetailView: View {
+    @ObservedObject var imageLoader = ImageLoader()
     @EnvironmentObject var favVM: FavouritesViewModel
 
     let movie: Movie
     
     var body: some View {
         ScrollView {
-            AsyncImage(url: movie.backgroundURL) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
-            }.aspectRatio(16/9, contentMode: .fit)
-
+            if self.imageLoader.image != nil {
+                Image(uiImage: self.imageLoader.image!)
+                    .resizable()
+                    .aspectRatio(16/9, contentMode: .fit)
+            }else{
+                Image(uiImage: UIImage(named: "placeholder-tile.png")!)
+                    .resizable()
+                    .aspectRatio(16/9, contentMode: .fill)
+            }
+            
             Group {
                 HStack {
                     Text(movie.title ?? "")
@@ -48,6 +53,9 @@ struct MovieDetailView: View {
             .padding(.leading, 20)
             .padding(.trailing, 20)
             
+        }
+        .onAppear {
+            self.imageLoader.loadImage(with: movie.backgroundURL)
         }
         .navigationTitle(movie.title ?? "")
         .navigationBarTitleDisplayMode(.inline)
