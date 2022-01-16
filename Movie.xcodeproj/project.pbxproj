@@ -42,6 +42,7 @@
 		67F20CA62794165E00302D1B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20CA52794165E00302D1B /* ImageLoader.swift */; };
 		67F20CA827941FC600302D1B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20CA727941FC600302D1B /* placeholder.png */; };
 		67F4113F2794486000F1B2FB /* placeholder-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F4113E2794486000F1B2FB /* placeholder-tile.png */; };
+		67F4114327944B8300F1B2FB /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4114227944B8300F1B2FB /* APITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		67F20CA52794165E00302D1B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		67F20CA727941FC600302D1B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		67F4113E2794486000F1B2FB /* placeholder-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder-tile.png"; sourceTree = "<group>"; };
+		67F4114227944B8300F1B2FB /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		67F20C462793077D00302D1B /* MovieTests */ = {
 			isa = PBXGroup;
 			children = (
+				67F4114227944B8300F1B2FB /* APITests.swift */,
 				67F20C472793077D00302D1B /* MovieTests.swift */,
 			);
 			path = MovieTests;
@@ -402,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F4114327944B8300F1B2FB /* APITests.swift in Sources */,
 				67F20C482793077D00302D1B /* MovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

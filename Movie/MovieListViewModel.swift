@@ -16,7 +16,6 @@ class MovieListViewModel: ObservableObject {
     private var loadMorePopularPage = true
     private var loadMoreUpcomingPage = true
 
-    // MARK: - Init & Deinit
     init() {
         getPopularMovies()
         getUpcomingMovies()
@@ -30,7 +29,7 @@ class MovieListViewModel: ObservableObject {
         fetchUpcomingMovies(pageNo: upcomingCurrPage)
     }
     
-    func fetchPopularMovies(pageNo: Int) {
+    private func fetchPopularMovies(pageNo: Int) {
         guard loadMorePopularPage else {
             return
         }
@@ -91,7 +90,7 @@ class MovieListViewModel: ObservableObject {
         }
     }
         
-    func fetchUpcomingMovies(pageNo: Int) {
+    private func fetchUpcomingMovies(pageNo: Int) {
         guard loadMoreUpcomingPage else {
             return
         }

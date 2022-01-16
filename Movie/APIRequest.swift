@@ -60,33 +60,4 @@ class APIRequest {
         })
         task.resume()
     }
-    /*
-    /// Get movies list form the Movie API
-    /// - Parameters:
-    ///   - page: index of movie page to fetch
-    ///   - completion: `Result` of request returning `MoviesResponce` on success or `Error` on failure
-    func fetchMovies(page: Int, completion: @escaping (Result<MoviesResponce, Error>) -> ()) {
-        AF.request(baseAPIURL + "/discover/movie?api_key=" + APIKEY + "&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=\(page)&with_watch_monetization_types=flatrate").responseDecodable(of: MoviesResponce.self) { responce in
-            debugPrint("responce")
-            guard let movies = responce.value else {
-                if let error = responce.error {
-                    completion(.failure(error))
-                }
-                return
-            }
-            completion(.success(movies))
-        }
-        
-    }
-    */
-    
-    /*
-    func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
-        guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
-            completion(.failure(.invalidEndpoint))
-            return
-        }
-        self.loadURLAndDecode(url: url, completion: completion)
-    }
-    */
 }
