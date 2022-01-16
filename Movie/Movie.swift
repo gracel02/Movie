@@ -59,5 +59,9 @@ struct Movie: Codable, Identifiable {
             return URL(string: "https://image.tmdb.org/t/p/w500" + posterPath!)!
         }
     }
+    
+    var popularityDisplay: String {
+        return String(format: "%.2f", popularity ?? 0.0)
+    }
 }
 

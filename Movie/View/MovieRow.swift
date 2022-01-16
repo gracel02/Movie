@@ -24,7 +24,7 @@ struct MovieRow: View {
                 LazyHStack(alignment: .top, spacing: 20) {
                     ForEach(movies) { movie in
                         NavigationLink {
-
+                            MovieDetailView(movie: movie)
                         } label: {
                             MovieItem(movie: movie)
                         }

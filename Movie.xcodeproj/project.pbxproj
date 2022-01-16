@@ -36,6 +36,7 @@
 		67F20C972793505700302D1B /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C882793505600302D1B /* Icon-App-40x40@3x.png */; };
 		67F20C982793505700302D1B /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C892793505600302D1B /* Icon-App-83.5x83.5@2x.png */; };
 		67F20C9A2793F0C200302D1B /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C992793F0C200302D1B /* FavouritesView.swift */; };
+		67F20C9E2793FEB200302D1B /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C9D2793FEB200302D1B /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		67F20C882793505600302D1B /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
 		67F20C892793505600302D1B /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
 		67F20C992793F0C200302D1B /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		67F20C9D2793FEB200302D1B /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				67F20C602793091700302D1B /* MovieListView.swift */,
 				67F20C6B27930A1600302D1B /* MovieRow.swift */,
 				67F20C6D27930A2F00302D1B /* MovieItem.swift */,
+				67F20C9D2793FEB200302D1B /* MovieDetailView.swift */,
 				67F20C992793F0C200302D1B /* FavouritesView.swift */,
 			);
 			path = View;
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F20C9E2793FEB200302D1B /* MovieDetailView.swift in Sources */,
 				67F20C392793077A00302D1B /* ContentView.swift in Sources */,
 				67F20C6E27930A2F00302D1B /* MovieItem.swift in Sources */,
 				67F20C372793077A00302D1B /* MovieApp.swift in Sources */,
