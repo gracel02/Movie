@@ -14,6 +14,28 @@
 		67F20C482793077D00302D1B /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C472793077D00302D1B /* MovieTests.swift */; };
 		67F20C522793077D00302D1B /* MovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C512793077D00302D1B /* MovieUITests.swift */; };
 		67F20C542793077D00302D1B /* MovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C532793077D00302D1B /* MovieUITestsLaunchTests.swift */; };
+		67F20C612793091700302D1B /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C602793091700302D1B /* MovieListView.swift */; };
+		67F20C642793098200302D1B /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C632793098200302D1B /* MovieListViewModel.swift */; };
+		67F20C66279309BD00302D1B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C65279309BD00302D1B /* APIRequest.swift */; };
+		67F20C68279309CA00302D1B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C67279309CA00302D1B /* Movie.swift */; };
+		67F20C6C27930A1600302D1B /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C6B27930A1600302D1B /* MovieRow.swift */; };
+		67F20C6E27930A2F00302D1B /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C6D27930A2F00302D1B /* MovieItem.swift */; };
+		67F20C8A2793505700302D1B /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C7B2793505500302D1B /* Icon-App-20x20@1x.png */; };
+		67F20C8B2793505700302D1B /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C7C2793505500302D1B /* Icon-App-76x76@1x.png */; };
+		67F20C8C2793505700302D1B /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C7D2793505500302D1B /* Icon-App-29x29@1x.png */; };
+		67F20C8D2793505700302D1B /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C7E2793505500302D1B /* Icon-App-20x20@2x.png */; };
+		67F20C8E2793505700302D1B /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C7F2793505500302D1B /* Icon-App-40x40@2x.png */; };
+		67F20C8F2793505700302D1B /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C802793505600302D1B /* Icon-App-29x29@3x.png */; };
+		67F20C902793505700302D1B /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C812793505600302D1B /* Icon-App-60x60@2x.png */; };
+		67F20C912793505700302D1B /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C822793505600302D1B /* Icon-App-29x29@2x.png */; };
+		67F20C922793505700302D1B /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C832793505600302D1B /* Icon-App-60x60@3x.png */; };
+		67F20C932793505700302D1B /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C842793505600302D1B /* ItunesArtwork@2x.png */; };
+		67F20C942793505700302D1B /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C852793505600302D1B /* Icon-App-20x20@3x.png */; };
+		67F20C952793505700302D1B /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C862793505600302D1B /* Icon-App-40x40@1x.png */; };
+		67F20C962793505700302D1B /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C872793505600302D1B /* Icon-App-76x76@2x.png */; };
+		67F20C972793505700302D1B /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C882793505600302D1B /* Icon-App-40x40@3x.png */; };
+		67F20C982793505700302D1B /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F20C892793505600302D1B /* Icon-App-83.5x83.5@2x.png */; };
+		67F20C9A2793F0C200302D1B /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F20C992793F0C200302D1B /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +66,28 @@
 		67F20C4D2793077D00302D1B /* MovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F20C512793077D00302D1B /* MovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUITests.swift; sourceTree = "<group>"; };
 		67F20C532793077D00302D1B /* MovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67F20C602793091700302D1B /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		67F20C632793098200302D1B /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		67F20C65279309BD00302D1B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		67F20C67279309CA00302D1B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		67F20C6B27930A1600302D1B /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		67F20C6D27930A2F00302D1B /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		67F20C7B2793505500302D1B /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		67F20C7C2793505500302D1B /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		67F20C7D2793505500302D1B /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		67F20C7E2793505500302D1B /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		67F20C7F2793505500302D1B /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		67F20C802793505600302D1B /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		67F20C812793505600302D1B /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		67F20C822793505600302D1B /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		67F20C832793505600302D1B /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		67F20C842793505600302D1B /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		67F20C852793505600302D1B /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		67F20C862793505600302D1B /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		67F20C872793505600302D1B /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		67F20C882793505600302D1B /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		67F20C892793505600302D1B /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		67F20C992793F0C200302D1B /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				67F20C362793077A00302D1B /* MovieApp.swift */,
-				67F20C382793077A00302D1B /* ContentView.swift */,
+				67F20C632793098200302D1B /* MovieListViewModel.swift */,
+				67F20C65279309BD00302D1B /* APIRequest.swift */,
+				67F20C67279309CA00302D1B /* Movie.swift */,
+				67F20C622793095700302D1B /* View */,
+				67F20C792793501A00302D1B /* ArtAssets */,
 				67F20C3A2793077C00302D1B /* Assets.xcassets */,
 				67F20C3C2793077C00302D1B /* Preview Content */,
 			);
@@ -125,6 +173,48 @@
 				67F20C532793077D00302D1B /* MovieUITestsLaunchTests.swift */,
 			);
 			path = MovieUITests;
+			sourceTree = "<group>";
+		};
+		67F20C622793095700302D1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C382793077A00302D1B /* ContentView.swift */,
+				67F20C602793091700302D1B /* MovieListView.swift */,
+				67F20C6B27930A1600302D1B /* MovieRow.swift */,
+				67F20C6D27930A2F00302D1B /* MovieItem.swift */,
+				67F20C992793F0C200302D1B /* FavouritesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F20C792793501A00302D1B /* ArtAssets */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C7A2793502900302D1B /* AppIcons */,
+			);
+			path = ArtAssets;
+			sourceTree = "<group>";
+		};
+		67F20C7A2793502900302D1B /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C7B2793505500302D1B /* Icon-App-20x20@1x.png */,
+				67F20C7E2793505500302D1B /* Icon-App-20x20@2x.png */,
+				67F20C852793505600302D1B /* Icon-App-20x20@3x.png */,
+				67F20C7D2793505500302D1B /* Icon-App-29x29@1x.png */,
+				67F20C822793505600302D1B /* Icon-App-29x29@2x.png */,
+				67F20C802793505600302D1B /* Icon-App-29x29@3x.png */,
+				67F20C862793505600302D1B /* Icon-App-40x40@1x.png */,
+				67F20C7F2793505500302D1B /* Icon-App-40x40@2x.png */,
+				67F20C882793505600302D1B /* Icon-App-40x40@3x.png */,
+				67F20C812793505600302D1B /* Icon-App-60x60@2x.png */,
+				67F20C832793505600302D1B /* Icon-App-60x60@3x.png */,
+				67F20C7C2793505500302D1B /* Icon-App-76x76@1x.png */,
+				67F20C872793505600302D1B /* Icon-App-76x76@2x.png */,
+				67F20C892793505600302D1B /* Icon-App-83.5x83.5@2x.png */,
+				67F20C842793505600302D1B /* ItunesArtwork@2x.png */,
+			);
+			path = AppIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +321,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F20C912793505700302D1B /* Icon-App-29x29@2x.png in Resources */,
+				67F20C902793505700302D1B /* Icon-App-60x60@2x.png in Resources */,
+				67F20C962793505700302D1B /* Icon-App-76x76@2x.png in Resources */,
+				67F20C8C2793505700302D1B /* Icon-App-29x29@1x.png in Resources */,
 				67F20C3E2793077C00302D1B /* Preview Assets.xcassets in Resources */,
+				67F20C8D2793505700302D1B /* Icon-App-20x20@2x.png in Resources */,
+				67F20C922793505700302D1B /* Icon-App-60x60@3x.png in Resources */,
+				67F20C972793505700302D1B /* Icon-App-40x40@3x.png in Resources */,
+				67F20C8E2793505700302D1B /* Icon-App-40x40@2x.png in Resources */,
 				67F20C3B2793077C00302D1B /* Assets.xcassets in Resources */,
+				67F20C942793505700302D1B /* Icon-App-20x20@3x.png in Resources */,
+				67F20C952793505700302D1B /* Icon-App-40x40@1x.png in Resources */,
+				67F20C8F2793505700302D1B /* Icon-App-29x29@3x.png in Resources */,
+				67F20C8A2793505700302D1B /* Icon-App-20x20@1x.png in Resources */,
+				67F20C982793505700302D1B /* Icon-App-83.5x83.5@2x.png in Resources */,
+				67F20C8B2793505700302D1B /* Icon-App-76x76@1x.png in Resources */,
+				67F20C932793505700302D1B /* ItunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F20C392793077A00302D1B /* ContentView.swift in Sources */,
+				67F20C6E27930A2F00302D1B /* MovieItem.swift in Sources */,
 				67F20C372793077A00302D1B /* MovieApp.swift in Sources */,
+				67F20C68279309CA00302D1B /* Movie.swift in Sources */,
+				67F20C612793091700302D1B /* MovieListView.swift in Sources */,
+				67F20C6C27930A1600302D1B /* MovieRow.swift in Sources */,
+				67F20C66279309BD00302D1B /* APIRequest.swift in Sources */,
+				67F20C9A2793F0C200302D1B /* FavouritesView.swift in Sources */,
+				67F20C642793098200302D1B /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +539,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +569,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +592,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5SCCR5HHT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +617,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5SCCR5HHT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
