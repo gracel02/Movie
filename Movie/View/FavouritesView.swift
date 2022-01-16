@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct FavouritesView: View {
+    @EnvironmentObject var favVM: FavouritesViewModel
+    private var gridItemLayout: [GridItem] =
+             Array(repeating: .init(.flexible()), count: 2)
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+             ScrollView {
+                 LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                     ForEach(favVM.favouriteMovieList) { movie in
+                         NavigationLink(destination: MovieDetailView(movie: movie)) {
+                             MovieItem(movie: movie)
+                         }
+                     }
+                 }
+             }
+            .navigationTitle("Favourites")
+        }
     }
 }
 
 struct FavouritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouritesView()
+        ForEach(ColorScheme.allCases, id: \.self) {
+            FavouritesView()
+                .environmentObject(FavouritesViewModel())
+                .preferredColorScheme($0)
+        }
     }
 }

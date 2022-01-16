@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct MovieApp: App {
+    @StateObject var favVM = FavouritesViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(favVM)
         }
     }
 }

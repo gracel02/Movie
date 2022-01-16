@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieListView: View {
     @ObservedObject var movieListVM = MovieListViewModel()
+    @EnvironmentObject var favVM: FavouritesViewModel
 
     var body: some View {
         NavigationView {
@@ -34,6 +35,7 @@ struct MovieListView_Previews: PreviewProvider {
         ForEach(ColorScheme.allCases, id: \.self) {
             MovieListView()
                 .preferredColorScheme($0)
+                .environmentObject(FavouritesViewModel())
         }
     }
 }

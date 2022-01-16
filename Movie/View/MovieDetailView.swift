@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MovieDetailView: View {
-    
+    @EnvironmentObject var favVM: FavouritesViewModel
+
     let movie: Movie
     
     var body: some View {
@@ -23,6 +24,7 @@ struct MovieDetailView: View {
                 HStack {
                     Text(movie.title ?? "")
                         .font(.title)
+                        .multilineTextAlignment(.center)
                 }
 
                 HStack {
@@ -37,7 +39,9 @@ struct MovieDetailView: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
 
-                Divider().padding(10)
+                Divider()
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
 
                 Text(movie.overview ?? "")
             }
@@ -47,6 +51,9 @@ struct MovieDetailView: View {
         }
         .navigationTitle(movie.title ?? "")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            FavouriteButton(movie: movie, isSet: favVM.contains(movie: movie))
+        }
     }
 }
 
@@ -55,6 +62,7 @@ struct MovieDetailView_Previews: PreviewProvider {
         ForEach(ColorScheme.allCases, id: \.self) {
             MovieDetailView(movie: Movie(id: 1, title: "Title", overview: "Movie Description", backdropPath: "", posterPath: "", popularity: 10.0, releaseDate: "", voteAverage: 10.0, voteCount: 5))
                 .preferredColorScheme($0)
+                .environmentObject(FavouritesViewModel())
         }
     }
 }
