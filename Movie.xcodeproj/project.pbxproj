@@ -153,12 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				67F20C362793077A00302D1B /* MovieApp.swift */,
-				67F20C632793098200302D1B /* MovieListViewModel.swift */,
-				67F20C9F279403DF00302D1B /* FavouritesViewModel.swift */,
-				67F20C65279309BD00302D1B /* APIRequest.swift */,
-				67F20CA52794165E00302D1B /* ImageLoader.swift */,
-				67F20C67279309CA00302D1B /* Movie.swift */,
+				67F41146279463E900F1B2FB /* Model */,
+				67F41147279463F500F1B2FB /* ViewModel */,
 				67F20C622793095700302D1B /* View */,
+				67F411482794640A00F1B2FB /* Helpers */,
 				67F20C792793501A00302D1B /* ArtAssets */,
 				67F20C3A2793077C00302D1B /* Assets.xcassets */,
 				67F20C3C2793077C00302D1B /* Preview Content */,
@@ -236,6 +234,32 @@
 				67F20C842793505600302D1B /* ItunesArtwork@2x.png */,
 			);
 			path = AppIcons;
+			sourceTree = "<group>";
+		};
+		67F41146279463E900F1B2FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C67279309CA00302D1B /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67F41147279463F500F1B2FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C632793098200302D1B /* MovieListViewModel.swift */,
+				67F20C9F279403DF00302D1B /* FavouritesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67F411482794640A00F1B2FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67F20C65279309BD00302D1B /* APIRequest.swift */,
+				67F20CA52794165E00302D1B /* ImageLoader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
